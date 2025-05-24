@@ -1,3 +1,4 @@
+Edited 2025/05/24
 # Virtual-HDD-LED
 This is a work in progress, a short Python-script able to display a HDD-LED on a Gnome/Mate-Desktop
 
@@ -23,11 +24,11 @@ REFRESHTIME = 100 -> Time in ms, speed of scanning the harddisk
 
 SHOWTIME = 0.3 -> Time the LED is "burning" after a harddisk-activity
 
-SIZEX = 16 -> Size of the HDD_LED-area in pixels
-SIZEY = 16
+--- Removed SIZEX = 16 -> Size of the HDD_LED-area in pixels
+--- Removed SIZEY = 16
 
-MOVX = 1900 -> Position of the LED in pixels, this is for a Full-HD-Screen
-MOVY = 1040
+--- Removed MOVX = 1900 -> Position of the LED in pixels, this is for a Full-HD-Screen
+--- Removed MOVY = 1040
 
 You can start the script by calling
 
@@ -36,4 +37,19 @@ python 3 disk_activity_applet.py
 in a terminal, or create a starter for it containng this command
 
 Be free to work on this, perhaps you manage to get rid of the window and change the icon inside the applet.
-dddv
+
+Additions from 05/24:
+
+Applet has got more menu-items
+
+You can hide or unhide the HDD-LED
+You can change position of the HDD-LED by numbers 1 to 9, positions like the numbers on your number-block
+
+7 8 9
+4 5 6
+1 2 3
+
+You can change the color to Green, Red and Blue
+
+You can change the size to 8, 16, 20, 24, 28, 32, 40, 48, 64 pixels
+The program gets the screen width and height and sets the position due to this.
